@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.sinacor.com.br/Sinacor.Infra.Common.Validation/2008/08" elementFormDefault="qualified" targetNamespace="http://www.sinacor.com.br/Sinacor.Infra.Common.Validation/2008/08" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ValidationError">
+    <xs:sequence>
+      <xs:element name="ErrorNumber" type="xs:int" />
+      <xs:element name="ResourceKey" nillable="true" type="xs:string" />
+      <xs:element name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Parameters" nillable="true" type="q1:ArrayOfanyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ValidationError" nillable="true" type="tns:ValidationError" />
+</xs:schema>

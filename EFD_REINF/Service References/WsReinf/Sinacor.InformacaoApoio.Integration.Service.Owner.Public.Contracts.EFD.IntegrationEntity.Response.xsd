@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity.Response" elementFormDefault="qualified" targetNamespace="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity.Response" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity" />
+  <xs:complexType name="ResponseRetencao">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Erro" nillable="true" type="tns:ResponseError" />
+      <xs:element xmlns:q1="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity" minOccurs="0" name="ListaRetencao" nillable="true" type="q1:ArrayOfRetencao" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponseRetencao" nillable="true" type="tns:ResponseRetencao" />
+  <xs:complexType name="ResponseError">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ExisteErro" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Mensagem" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponseError" nillable="true" type="tns:ResponseError" />
+  <xs:complexType name="ResponseCliente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Erro" nillable="true" type="tns:ResponseError" />
+      <xs:element xmlns:q2="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity" minOccurs="0" name="ListaClientes" nillable="true" type="q2:ArrayOfCliente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponseCliente" nillable="true" type="tns:ResponseCliente" />
+  <xs:complexType name="ResponseInstituicao">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Erro" nillable="true" type="tns:ResponseError" />
+      <xs:element xmlns:q3="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity" minOccurs="0" name="ListaInstituicoes" nillable="true" type="q3:ArrayOfInstituicao" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponseInstituicao" nillable="true" type="tns:ResponseInstituicao" />
+</xs:schema>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity.Request" elementFormDefault="qualified" targetNamespace="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity.Request" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="EFDRequest">
+    <xs:sequence>
+      <xs:element name="CodigoEmpresa" type="xs:int" />
+      <xs:element name="DataFinal" type="xs:dateTime" />
+      <xs:element name="DataInicio" type="xs:dateTime" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ListaCodigoRetencao" nillable="true" type="q1:ArrayOfint" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ListaCpfCgc" nillable="true" type="q2:ArrayOfstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EFDRequest" nillable="true" type="tns:EFDRequest" />
+  <xs:complexType name="EFDRequestCliente">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EFDRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CompensaBmfBovespa" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ConsultaBmf" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ConsultaBovespa" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EFDRequestCliente" nillable="true" type="tns:EFDRequestCliente" />
+  <xs:complexType name="EFDRequestInstitucional">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EFDRequest">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EFDRequestInstitucional" nillable="true" type="tns:EFDRequestInstitucional" />
+</xs:schema>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Reinf xmlns="xmlns=http://www.reinf.esocial.gov.br/schemas/evtInfoContribuinte/v1_02_00">
+    <EvtInfoContri xmlns="id=ID1XXXXXXXX0001XX2017112409110500000">
+        <ideEvento>
+            <tpAmb>SP</tpAmb>
+            <procEmi>1</procEmi>
+            <verProc>4.4.0</verProc>
+        </ideEvento>
+        <ideContri>
+            <tpInsc>tpInsc</tpInsc>
+            <nrInsc>nrInsc</nrInsc>
+        </ideContri>
+        <infoContri>
+            <inclusao>
+                <idePeriodo>
+                    <iniValid>21/10/2018</iniValid>
+                </idePeriodo>
+                <infoCadastro>
+                    <classTrib>99</classTrib>
+                    <indEscrituracao>1</indEscrituracao>
+                    <indDesoneracao>0</indDesoneracao>
+                    <indAcordoIsenMulta>0</indAcordoIsenMulta>
+                    <indSitPJ>0</indSitPJ>
+                    <contato>
+                        <nmCtt>Guarulhos</nmCtt>
+                        <cpfCtt>cpfCtt</cpfCtt>
+                        <foneFixo>foneFixo</foneFixo>
+                    </contato>
+                </infoCadastro>
+            </inclusao>
+        </infoContri>
+    </EvtInfoContri>
+</Reinf>

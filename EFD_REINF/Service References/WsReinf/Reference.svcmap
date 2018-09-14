@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a35c547e-64b0-4ba4-935f-4798fadd3ddd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://srv925:25110/Sinacor/InformacaoApoio/InformacaoApoio.Integration.IConsultaEFD.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationService.wsdl" MetadataType="Wsdl" ID="ce1a87d7-d4cb-4fda-984e-5acd971b86d1" SourceId="1" SourceUrl="net.tcp://srv925:25110/Sinacor/InformacaoApoio/InformacaoApoio.Integration.IConsultaEFD.svc/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="c7a171c1-429e-4af3-bee0-acdbb580af78" SourceId="1" SourceUrl="net.tcp://srv925:25110/Sinacor/InformacaoApoio/InformacaoApoio.Integration.IConsultaEFD.svc/mex" />
+    <MetadataFile FileName="Sinacor.Infra.Service.Security.Services.xsd" MetadataType="Schema" ID="5d69ed0e-a280-4e8d-8a28-fda293ba20e9" SourceId="1" SourceUrl="net.tcp://srv925:25110/Sinacor/InformacaoApoio/InformacaoApoio.Integration.IConsultaEFD.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="a70c94c7-4b36-4c31-b912-8061dbcc475a" SourceId="1" SourceUrl="net.tcp://srv925:25110/Sinacor/InformacaoApoio/InformacaoApoio.Integration.IConsultaEFD.svc/mex" />
+    <MetadataFile FileName="Sinacor.Infra.Common.Exceptions.FaultContracts.xsd" MetadataType="Schema" ID="4af57a83-75b9-49ec-b79e-83b313dd0f45" SourceId="1" SourceUrl="net.tcp://srv925:25110/Sinacor/InformacaoApoio/InformacaoApoio.Integration.IConsultaEFD.svc/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="1d0eaccc-3044-4dfd-beb6-0ce5cdd7695a" SourceId="1" SourceUrl="net.tcp://srv925:25110/Sinacor/InformacaoApoio/InformacaoApoio.Integration.IConsultaEFD.svc/mex" />
+    <MetadataFile FileName="08.xsd" MetadataType="Schema" ID="9e52e39c-3b85-4b46-afb0-3b2ee603c450" SourceId="1" SourceUrl="net.tcp://srv925:25110/Sinacor/InformacaoApoio/InformacaoApoio.Integration.IConsultaEFD.svc/mex" />
+    <MetadataFile FileName="Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationService.xsd" MetadataType="Schema" ID="ea8957e1-6acc-4814-9f09-236f35e9212c" SourceId="1" SourceUrl="net.tcp://srv925:25110/Sinacor/InformacaoApoio/InformacaoApoio.Integration.IConsultaEFD.svc/mex" />
+    <MetadataFile FileName="Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity.Request.xsd" MetadataType="Schema" ID="0573c702-9768-4915-8fde-69fcfde31c45" SourceId="1" SourceUrl="net.tcp://srv925:25110/Sinacor/InformacaoApoio/InformacaoApoio.Integration.IConsultaEFD.svc/mex" />
+    <MetadataFile FileName="Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity.Response.xsd" MetadataType="Schema" ID="90c76028-68e2-4e45-9442-6318c599fe6d" SourceId="1" SourceUrl="net.tcp://srv925:25110/Sinacor/InformacaoApoio/InformacaoApoio.Integration.IConsultaEFD.svc/mex" />
+    <MetadataFile FileName="Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity.xsd" MetadataType="Schema" ID="efa3be66-f8d0-43b9-aaeb-17ae90a639bb" SourceId="1" SourceUrl="net.tcp://srv925:25110/Sinacor/InformacaoApoio/InformacaoApoio.Integration.IConsultaEFD.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

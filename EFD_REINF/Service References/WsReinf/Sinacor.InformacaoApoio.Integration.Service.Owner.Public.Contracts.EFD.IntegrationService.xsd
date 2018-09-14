@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationService" elementFormDefault="qualified" targetNamespace="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity.Request" />
+  <xs:import namespace="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity.Response" />
+  <xs:element name="ConsultaListaRetencaoClientes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity.Request" minOccurs="0" name="request" nillable="true" type="q1:EFDRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultaListaRetencaoClientesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity.Response" minOccurs="0" name="ConsultaListaRetencaoClientesResult" nillable="true" type="q2:ResponseRetencao" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultaListaRetencaoInstitucional">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity.Request" minOccurs="0" name="request" nillable="true" type="q3:EFDRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultaListaRetencaoInstitucionalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity.Response" minOccurs="0" name="ConsultaListaRetencaoInstitucionalResult" nillable="true" type="q4:ResponseRetencao" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarDadosClientes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity.Request" minOccurs="0" name="request" nillable="true" type="q5:EFDRequestCliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarDadosClientesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity.Response" minOccurs="0" name="ConsultarDadosClientesResult" nillable="true" type="q6:ResponseCliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarDadosInstituicoes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity.Request" minOccurs="0" name="request" nillable="true" type="q7:EFDRequestInstitucional" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarDadosInstituicoesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity.Response" minOccurs="0" name="ConsultarDadosInstituicoesResult" nillable="true" type="q8:ResponseInstituicao" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

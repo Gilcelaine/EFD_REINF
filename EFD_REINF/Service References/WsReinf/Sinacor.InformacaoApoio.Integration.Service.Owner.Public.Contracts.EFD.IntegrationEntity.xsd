@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity" elementFormDefault="qualified" targetNamespace="http://www.bovespa.com.br/Sinacor.InformacaoApoio.Integration.Service.Owner.Public.Contracts.EFD.IntegrationEntity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfRetencao">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Retencao" nillable="true" type="tns:Retencao" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRetencao" nillable="true" type="tns:ArrayOfRetencao" />
+  <xs:complexType name="Retencao">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoImposto" type="xs:int" />
+      <xs:element minOccurs="0" name="DescricaoImposto" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Retencao" nillable="true" type="tns:Retencao" />
+  <xs:complexType name="ArrayOfCliente">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Cliente" nillable="true" type="tns:Cliente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCliente" nillable="true" type="tns:ArrayOfCliente" />
+  <xs:complexType name="Cliente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CPFCNPJ" type="xs:long" />
+      <xs:element minOccurs="0" name="CPFCNPJEstrangeiro" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="CPFCNPJOrigem" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="ClienteEstrangeiro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CodigoCondDependencia" type="xs:int" />
+      <xs:element minOccurs="0" name="DataFundacao" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Endereco" nillable="true" type="tns:Endereco" />
+      <xs:element minOccurs="0" name="Imposto" nillable="true" type="tns:ArrayOfImpostoCliente" />
+      <xs:element minOccurs="0" name="NomeCliente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoPessoa" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Cliente" nillable="true" type="tns:Cliente" />
+  <xs:complexType name="Endereco">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Bairro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CEP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cidade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Complemento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Logradouro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Numero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaisEndereco" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaisNacionalidade" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Endereco" nillable="true" type="tns:Endereco" />
+  <xs:complexType name="ArrayOfImpostoCliente">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ImpostoCliente" nillable="true" type="tns:ImpostoCliente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfImpostoCliente" nillable="true" type="tns:ArrayOfImpostoCliente" />
+  <xs:complexType name="ImpostoCliente">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseImposto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoISIN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CodigoOrigem" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Conta" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ImpostoCliente" nillable="true" type="tns:ImpostoCliente" />
+  <xs:complexType name="BaseImposto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoImposto" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Data" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DataLiquidacao" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ValorBase" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ValorImposto" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseImposto" nillable="true" type="tns:BaseImposto" />
+  <xs:complexType name="ArrayOfInstituicao">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Instituicao" nillable="true" type="tns:Instituicao" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInstituicao" nillable="true" type="tns:ArrayOfInstituicao" />
+  <xs:complexType name="Instituicao">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CPFCNPJ" type="xs:long" />
+      <xs:element minOccurs="0" name="Endereco" nillable="true" type="tns:Endereco" />
+      <xs:element minOccurs="0" name="ImpostoInstitucional" nillable="true" type="tns:ArrayOfImpostoInstitucional" />
+      <xs:element minOccurs="0" name="Nome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoPessoa" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Instituicao" nillable="true" type="tns:Instituicao" />
+  <xs:complexType name="ArrayOfImpostoInstitucional">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ImpostoInstitucional" nillable="true" type="tns:ImpostoInstitucional" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfImpostoInstitucional" nillable="true" type="tns:ArrayOfImpostoInstitucional" />
+  <xs:complexType name="ImpostoInstitucional">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseImposto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoDIRF" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="DescricaoDIRF" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DescricaoImposto" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ImpostoInstitucional" nillable="true" type="tns:ImpostoInstitucional" />
+</xs:schema>

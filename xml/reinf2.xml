@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Reinf xmlns="xmlns=http://www.reinf.esocial.gov.br/schemas/evtInfoContribuinte/v1_02_00">
+    <evtPgtosDivs xmlns="id=ID1XXXXXXXX0001XX2017112409110500000">
+        <ideEvento>
+            <indRetif>SP</indRetif>
+            <nrRecibo>1</nrRecibo>
+            <perApur>SP</perApur>
+            <tpAmb>SP</tpAmb>
+            <procEmi>SP</procEmi>
+            <verProc>SP</verProc>
+        </ideEvento>
+        <ideContri>
+            <tpInsc>tpInsc</tpInsc>
+            <nrInsc>nrInsc</nrInsc>
+            <ideBenef>
+                <codPgto>codPgto</codPgto>
+                <tpInscBenef>tpInscBenef</tpInscBenef>
+                <nrInscBenef>nrInscBenef</nrInscBenef>
+                <nmRazaoBenef>nmRazaoBenef</nmRazaoBenef>
+                <infoResidExt>
+                    <infoEnder>
+                        <paisResid>Gopoúva</paisResid>
+                        <dscLograd />
+                        <nrLograd />
+                        <complem />
+                        <bairro>Gopoúva</bairro>
+                        <cidade>Guarulhos</cidade>
+                        <codPostal>codPostal</codPostal>
+                        <infoFiscal>
+                            <indNIF>indNIF</indNIF>
+                            <nifBenef>nifBenef</nifBenef>
+                            <relFontePagad>relFontePagad</relFontePagad>
+                        </infoFiscal>
+                    </infoEnder>
+                </infoResidExt>
+                <infoMolestia>
+                    <dtLaudo>dtLaudo</dtLaudo>
+                </infoMolestia>
+                <infoPgto>
+                    <ideEstab>
+                        <tpInsc>1</tpInsc>
+                        <nrInsc xmlns="Rua das Palmeiras">
+                            <pgtoResidBR>
+                                <pgtoPF>pgtoPF</pgtoPF>
+                                <dtPgto>21/10/2018</dtPgto>
+                                <indSuspExig>indSuspExig</indSuspExig>
+                                <indDecTerceiro>0</indDecTerceiro>
+                                <vlrRendTributavel>0</vlrRendTributavel>
+                                <vlrIRRF>0</vlrIRRF>
+                                <detDeducao>
+                                    <vlrDeducao>0</vlrDeducao>
+                                </detDeducao>
+                                <rendIsento>
+                                    <tpIsencao>Guarulhos</tpIsencao>
+                                    <vlrIsento>vlrIsento</vlrIsento>
+                                    <descRendimento>foneFixo</descRendimento>
+                                </rendIsento>
+                            </pgtoResidBR>
+                        </nrInsc>
+                    </ideEstab>
+                </infoPgto>
+            </ideBenef>
+        </ideContri>
+    </evtPgtosDivs>
+</Reinf>
